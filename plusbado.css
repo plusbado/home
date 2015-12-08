@@ -6,6 +6,14 @@ body {
 }
 
 /* style for base elements */
+a {
+	color: #ded4a0;
+	text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #fff;
+}
 ul {
 	display: block;
 	list-style-type: disc;
