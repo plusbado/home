@@ -30,6 +30,9 @@ a {
 	color: #ded4a0;
 	text-decoration: none;
 }
+.clear {
+	clear: both;
+}
 
 /* Navigation */
 nav {
