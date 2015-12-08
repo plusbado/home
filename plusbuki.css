@@ -15,3 +15,55 @@ body {
 	margin-top: 1.25em;
 	width: 94%;
 }
+
+/* Common */
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  padding-left: 16px;
+}
+a {
+	color: #ded4a0;
+	text-decoration: none;
+}
+
+/* Navigation */
+nav {
+	font-size: 1.625em;
+	clear: both;
+	border-bottom: 2px solid #9cd;
+	margin-top: 2.2em;
+	text-transform: uppercase;
+	color: #fff;
+	display: block;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	float: left;
+	margin: 0;
+	margin-right: 4%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	background: none;
+}
+nav a {
+	position: relative;
+	bottom: -2px;
+	display: inline-block;
+	padding-bottom: 4px;
+	z-index: 10px;
+}
+nav a.selected,
+nav a:hover {
+	padding-bottom: 2px;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+}
+
