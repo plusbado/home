@@ -35,6 +35,9 @@ a {
 .clear {
 	clear: both;
 }
+.underline {
+	text-decoration: underline;
+}
 
 /* Navigation */
 nav {
