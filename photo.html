@@ -4,8 +4,22 @@
 	<meta charset=utf-8 />
 	<title>Plus &amp; Buki Badminton Team</title>
 	<link rel="stylesheet" type="text/css" href="plusbuki.css?201512090113">
-	<script type="text/javascript" src="./script/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="./script/plusbuki-photo.js"></script>
+	  <style>
+    /* Prevents slides from flashing */
+    #slides {
+      display:none;
+    }
+  </style>
+
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.slides.min.js"></script>
+
+	<script>
+		$(function(){
+			$("#slides").slidesjs({
+			});
+		});
+	</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -16,7 +30,7 @@
 				<li><a href="./">ホーム</a></li>
 				<li><a href="./schedule.html">練習日程</a></li>
 				<li><a class="selected" href="./photo.html">各種イベント</a></li>
-				<li><a href="./access.html">会場への生き方</a></li>
+				<li><a href="./access.html">会場への行き方</a></li>
 			</ul>
 			<div class="clear"></div>
 		</nav>
@@ -24,32 +38,26 @@
 		<!--写真-->
 		<h1>各種イベント</h1>
 
-		<div class="event-photo" />
-
-		<h3>2015 秋団体戦</h3>
-		<div>
-			<img src="./image/2015-autumn-tournament.jpeg">
+		<div id="slides">
+			<img src="./img/2014-batam.jpeg">
+			<img src="./img/2015-batam.jpeg">
+			<img src="./img/bbq.jpeg">
+			<img src="./img/drinking.jpeg">
+			<img src="./img/2014-asia-jpn-tournament.jpeg">
+			<img src="./img/2014-batam-2.jpeg">
+			<img src="./img/under-20m.jpeg">
+			<img src="./img/in-4130m.png">
+			<img src="./img/2015-autumn-tournament.jpeg">
+			<img src="./img/2015-batam2.jpeg">
+			<img src="./img/2015-thai.jpeg">
+			<img src="./img/keta-coach.jpeg">
 		</div>
-		<h3>2014 バタム合宿</h3>
-		<div>
-			<img src="./image/2014-batam.jpeg">
-		</div>
-		<h3>2015秋団体戦</h3>
-		<div>
-			<img src="./image/2015-autumn-tournament.jpeg">
-		</div>
-		<h3>2015秋団体戦</h3>
-		<div>
-			<img src="./image/2015-autumn-tournament.jpeg">
-		</div>
-		<h3>2015秋団体戦</h3>
-		<div>
-			<img src="./image/2015-autumn-tournament.jpeg">
-		</div>
-		<h3>2015秋団体戦</h3>
-		<div>
-			<img src="./image/2015-autumn-tournament.jpeg">
-		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.slidesjs-previous').text('<');
+				$('.slidesjs-next').text('>');
+			});
+		</script>
 	</div>
 </body>
 </html>
