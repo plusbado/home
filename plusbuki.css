@@ -38,6 +38,10 @@ a {
 .underline {
 	text-decoration: underline;
 }
+.access img {
+	max-width: 900px;
+	height: auto;
+}
 
 /* Navigation */
 nav {
